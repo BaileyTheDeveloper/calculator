@@ -1,0 +1,79 @@
+*{
+    font-family: 'Itim', cursive;
+}
+
+body{
+   background-color: #15202B; 
+}
+
+/* Calculator body */
+#calc-body{
+    display: block;
+    margin: auto;
+    margin-top: 55px;
+    width: 500px;
+    height: 700px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: rgb(251,251,251);
+    background: radial-gradient(circle, rgba(251,251,251,1) 0%, rgba(12,10,80,1) 100%);
+    box-shadow: 10px 10px 50px white;
+}
+
+
+/* Display */
+
+#display{
+    height: 150px;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 45px;
+    border: 1px black solid;
+    position: relative;
+    font-size: 45px;
+    text-align: right;
+    line-height: 225px;
+}
+
+/* Number buttons */
+.digits{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100px; 
+    margin: 45px;
+}
+
+.number{
+    font-size: 45px;
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 10px 20px;
+    background-color: white;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.number:hover{
+    background-color: #273747;
+    color: white;
+    transition: 400ms;
+}
+
+#zero{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 25px;
+    
+}
+
+#clear{
+    background-color: #536d88;
+}
+
+#clear:hover{
+    background-color: #273747;
+    color: white;
+    transition: 400ms;
+}
