@@ -3,12 +3,12 @@ let display = document.getElementById('display');
 let number = Array.from(document.getElementsByClassName('number'));
 
 number.map(number => {
-    number.addEventListener("click", (e) => {
-        switch (e.target.innerText) {
+    number.addEventListener("click", (event) => {
+        switch (event.target.innerText) {
             case 'C':
                 display.innerText = "";
                 break;
-            case '<-':
+            case '<':
                 display.innerText = display.innerText.slice(0, -1);
                 break;
             case '=':
@@ -20,7 +20,7 @@ number.map(number => {
                 break;
 
             default:
-                display.innerText += e.target.innerText
+                display.innerText += event.target.innerText
         }
     })
 })

@@ -1,5 +1,5 @@
 *{
-    font-family: 'Itim', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -11,12 +11,12 @@ body{
     display: block;
     margin: auto;
     margin-top: 55px;
-    width: 500px;
+    width: 450px;
     height: 700px;
     border: 2px solid black;
     border-radius: 20px;
-    background: rgb(251,251,251);
-    background: radial-gradient(circle, rgba(251,251,251,1) 0%, rgba(12,10,80,1) 100%);
+    background: rgb(162,170,204);
+    background: radial-gradient(circle, rgba(162,170,204,1) 0%, rgba(12,10,80,1) 100%);
     box-shadow: 10px 10px 50px white;
 }
 
@@ -31,11 +31,11 @@ body{
     margin: auto;
     margin-top: 45px;
     border: 1px black solid;
-    position: relative;
     font-size: 45px;
     text-align: right;
     line-height: 225px;
 }
+
 
 /* Number buttons */
 .digits{
@@ -47,8 +47,8 @@ body{
 
 .number{
     font-size: 45px;
-    border: 1px solid black;
-    border-radius: 100%;
+    border: 2px solid black;
+    border-radius: 35%;
     padding: 10px 20px;
     background-color: white;
     margin: 5px;
@@ -58,7 +58,13 @@ body{
 .number:hover{
     background-color: #273747;
     color: white;
+    border: 2px solid white;
     transition: 400ms;
+    
+}
+
+.symbol{
+    background-color: #536d88 ;
 }
 
 #zero{
@@ -69,7 +75,7 @@ body{
 }
 
 #clear{
-    background-color: #536d88;
+    background-color: #8192a5;
 }
 
 #clear:hover{
